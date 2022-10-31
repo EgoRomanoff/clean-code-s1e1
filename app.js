@@ -84,8 +84,8 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("edit-mode");
+    var editBtn=listItem.querySelector(".task__btn_edit");
+    var containsClass=listItem.classList.contains("todo-app__task_edit");
     //If class of the parent is .edit-mode
     if(containsClass){
 
@@ -156,8 +156,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.edit");
-    var deleteButton=taskListItem.querySelector("button.delete");
+    var editButton=taskListItem.querySelector("button.task__btn_edit");
+    var deleteButton=taskListItem.querySelector("button.task__btn_delete");
 
 
     //Bind editTask to edit button.
