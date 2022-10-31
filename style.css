@@ -143,18 +143,18 @@ button {
   width: 226px;
 }
 
-.btn__img_delete {
+.btn__img--delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn__img_delete:hover {
+.btn__img--delete:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.todo-app__task_completed .task__text {
+.todo-app__task--completed .task__text {
   text-decoration: line-through;
   color: #888;
 }
@@ -164,11 +164,11 @@ button {
   display: none;
 }
 
-.todo-app__task_edit .task__input {
+.todo-app__task--edit .task__input {
   display: inline-block;
   width: 224px;
 }
 
-.todo-app__task_edit .task__text {
+.todo-app__task--edit .task__text {
   display: none;
 }
