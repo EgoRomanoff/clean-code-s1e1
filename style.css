@@ -5,48 +5,48 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.banner img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.banner .banner__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .aaa {
+  .banner {
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.todo-app {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
-
-.task-row-wrapper {
+.add-task__form {
   display: flex;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.add-task__input {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
 }
 
 li,
@@ -141,13 +141,13 @@ li > input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+.btn__img_delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.btn__img_delete:hover {
   transform: rotateZ(0);
 }
 
@@ -162,11 +162,11 @@ ul li input[type=text] {
   display: none;
 }
 
-ul li.edit-mode input[type=text] {
+ul .todo-app__task_edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul .todo-app__task_edit label {
   display: none;
 }
